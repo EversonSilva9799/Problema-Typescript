@@ -14,6 +14,38 @@ export abstract class Consulta{
         this.data = data;
 
     }
+    
+    public getMedico() {
+        return this.medico;
+    }
+    
+    public setMedico(medico: Medico) {
+        this.medico = medico;
+    }
+    
+    public getPaciente() {
+        return this.paciente;
+    }
+    
+    public setPaciente(paciente: Paciente) {
+        this.paciente = paciente;
+    }
+    
+    public getValor() {
+        return this.valor;
+    }
+    
+    public setValor(valor: number) {
+        this.valor = valor;
+    }
+    
+    public getData() {
+        return this.data;
+    }
+    
+    public setData(data: Date) {
+        this.data = data;
+    }
 
     public  obterTipoConsulta(paciente:Paciente):string{
         if (paciente.getsetem() == true){
